@@ -1,0 +1,55 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[german]{babel}
+\usepackage{xcolor}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{tikz}
+
+\title{Matheaufgaben 1}
+%%\author{Pascal }
+%%\date{März 2023}
+
+\newcommand*{\ph}{\hspace{0.5cm} \dots \hspace{0.5cm} }%
+
+\newcommand{\addition}[2]{
+\vspace{1cm}
+\centering{
+\begin{tikzpicture}
+    
+    \node at (0,2) { {#1} };
+    \node at (1,2) { + };
+    \node (A) at (2,2) { {#2} };
+
+    \node at (5,2) { = ( ..... + ..... )};
+    \node (D) at (5,3) {};
+    \node at (8,2) {+ ..... = .....};
+
+    \node (E) at (5,4) { \textcolor{lightgray}{10} };
+
+    \node (B) at (1, 1) {};
+    \node (C) at (3, 1) {};
+
+    \node at (1,0) {.....};
+    \node at (3,0) {.....};
+
+    \draw [->] (A) -- (B);
+    \draw [->] (A) -- (C);
+    \draw [->] (D) -- (E);
+\end{tikzpicture}
+}
+
+}
+
+\begin{document}
+
+\section{Addition bis 10}
+
+
+\addition{8}{5}
+\addition{9}{6}
+\addition{7}{7}
+\addition{3}{8}
+\addition{6}{5}
+\addition{8}{7}
+
+\end{document}
