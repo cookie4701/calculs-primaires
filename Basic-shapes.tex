@@ -1,0 +1,48 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[german]{babel}
+\usepackage{xcolor}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{tikz}
+
+\title{Geometrische Grundformen}
+
+\begin{document}
+\begin{figure}
+
+\begin{tikzpicture}
+	
+	\draw (0,0) -- (10,0) -- (5,5) -- cycle;
+	
+\end{tikzpicture}
+
+\caption{DE: Dreieck, FR: Triangle}
+\end{figure}
+
+
+\begin{figure}
+	\begin{tikzpicture}
+		%% \draw (0,0) -- (0,3) -- (2,3) --  (2, 0) -- (0,0) ; 
+		\fill[blue] (0,0) -- (0,3) -- (2,3) --  (2, 0) -- (0,0) ; 
+	\end{tikzpicture}
+	
+	\vspace{0.5cm}
+	
+	\begin{tikzpicture}
+		%% \draw (0,0) -- (0,2) -- (3,2) --  (3, 0) -- (0,0) ; 
+		\fill[red] (0,0) -- (0,2) -- (3,2) --  (3, 0) -- (0,0) ; 
+	\end{tikzpicture}
+
+
+	\caption{DE: Rechtecke - Spezialfall vom Viereck, FR:Rectangles - cas particulier du quadrilatère }
+\end{figure}
+
+\begin{figure}
+	\begin{tikzpicture}
+		\fill[yellow] (2,2) circle (1.0);
+	\end{tikzpicture}
+\caption{DE: Kreis, FR: cercle}
+\end{figure}
+
+\end{document}
+
